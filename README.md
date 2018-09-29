@@ -10,3 +10,8 @@ for ii=1:nfiles
    currentimage = imread(currentfilename);
    images{ii} = currentimage;
 end
+
+% Extract the individual red, green, and blue color channels.
+redChannel = rgbImage(:, :, 1);
+greenChannel = rgbImage(:, :, 2);
+blueChannel = rgbImage(:, :, 3);
