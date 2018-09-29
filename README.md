@@ -15,3 +15,8 @@ end
 redChannel = rgbImage(:, :, 1);
 greenChannel = rgbImage(:, :, 2);
 blueChannel = rgbImage(:, :, 3);
+
+% converting from rgb to a grayscale image
+grayImage = rgb2gray(I);
+%showing the histogram
+imhist(grayImage);
